@@ -1,0 +1,8 @@
+version: '3.0'
+services:
+  leon-ai:
+    container_name: 'leon-ai'
+    build:
+      context: './'
+    ports:
+      - '${LEON_PORT:-1337}:${LEON_PORT:-1337}'
